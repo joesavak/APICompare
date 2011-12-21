@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Wadl:</b>
+  <%= @resource.wadl_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @resource.name %>
+</p>
+
+<p>
+  <b>Base url:</b>
+  <%= @resource.base_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>

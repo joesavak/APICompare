@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  wadl_id: 1
+  name: MyString
+  base_url: MyString
+
+two:
+  wadl_id: 1
+  name: MyString
+  base_url: MyString

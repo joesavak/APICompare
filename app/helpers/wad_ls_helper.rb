@@ -1,0 +1,2 @@
+module WadLsHelper
+end

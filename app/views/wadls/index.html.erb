@@ -1,0 +1,34 @@
+<h1>Listing WADLs</h1>
+
+<table border =1 >
+  <tr>
+  	<th>ID</th>
+    <th>Name/Description</th>
+    <th>WADL file name</th>
+    <th>WADL file size</th>
+    <th>WADL content type</th>
+	<th>File uploaded date</th>
+	<th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @wadls.each do |wadl| %>
+  <tr>
+  	<td><%= wadl.id%></td>
+    <td><%= wadl.name %></td>
+    <td><%= wadl.wadlfile_file_name %>
+    <td><%= wadl.wadlfile_file_size %>
+    <td><%= wadl.wadlfile_content_type %>
+    <td><%= wadl.created_at %> </td>
+    <td><%= link_to 'Show', wadl %></td>
+    <td><%= link_to 'Edit', edit_wadl_path(wadl) %></td>
+    <td><%= link_to 'Destroy', wadl, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Wadl', new_wadl_path %><br/>
+<%= link_to 'Home', root_path %>
